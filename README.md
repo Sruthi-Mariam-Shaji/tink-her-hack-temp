@@ -84,23 +84,25 @@ Not Applicable
 !HOME SCREEN<img width="1201" height="808" alt="home" src="https://github.com/user-attachments/assets/ef055984-f80b-4688-842f-306a05a6e989" />
 *Home screen of WalkWithHer showing the SOS button, motivational quote, and navigation options.*
 
-!E(Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+!SOS<img width="1120" height="686" alt="sos" src="https://github.com/user-attachments/assets/3f84904a-5a5a-4f60-92e3-6b5e44515760" />
+*Emergency SOS feature capturing live location and generating a WhatsApp sharing link.*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+!QUICKHELP<img width="920" height="726" alt="quickhelp" src="https://github.com/user-attachments/assets/7959a0e5-a304-4054-98e2-23697ba89d21" />
+*Quick Help feature providing nearby essential locations using Google Maps.*
+
+!HOSPITAL<img width="1798" height="982" alt="hospital" src="https://github.com/user-attachments/assets/ed5dcb5a-eb15-4cd6-b644-2ce80b9b8bc7" />
+*Hospital view under Quick Help
+
 
 #### Diagrams
 
 **System Architecture:**
 
-![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
+*The system follows a client-side web architecture where the frontend is built using HTML, CSS, and JavaScript. User interactions (such as SOS, Fake Call, and Quick Help) are handled through JavaScript functions in the browser. The application uses browser APIs like Geolocation to fetch live location data and integrates with external services such as Google Maps and WhatsApp for navigation and emergency sharing. The app is deployed on Vercel, ensuring secure HTTPS access.*
 
 **Application Workflow:**
 
-![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
+*The workflow begins when the user opens the Walk With Her web application. From the home screen, the user can select features such as SOS, Accompany Mode, Quick Help, or Fake Call. When SOS is triggered, the app captures the user’s live location and prepares a shareable message via WhatsApp. Quick Help redirects users to nearby essential services using Google Maps. Fake Call simulates an incoming call to help users exit unsafe situations. All actions are handled in real-time within the browser without requiring backend servers.*
 
 ---
 
@@ -359,9 +361,8 @@ python script.py -v --format json data.json
 ## Project Demo
 
 ### Video
-[Add your demo video link here - YouTube, Google Drive, etc.]
-
-*Explain what the video demonstrates - key features, user flow, technical highlights*
+https://drive.google.com/file/d/11m4pXV3KbhHfHfnSLwrxTA-D03UQ7156/view?usp=sharing
+This video goes through the different features of the WalkWithHer website.
 
 ### Additional Demos
 [Add any extra demo materials/links - Live site, APK download, online demo, etc.]
@@ -372,25 +373,24 @@ python script.py -v --format json data.json
 
 If you used AI tools during development, document them here for transparency:
 
-**Tool Used:** [e.g., GitHub Copilot, v0.dev, Cursor, ChatGPT, Claude]
+**Tool Used:** Chatgpt
 
 **Purpose:** [What you used it for]
-- Example: "Generated boilerplate React components"
-- Example: "Debugging assistance for async functions"
-- Example: "Code review and optimization suggestions"
+- Assisted in brainstorming and refining the project idea and features
+- Helped structure frontend logic using HTML, CSS, and JavaScript
+- Provided guidance for debugging UI and JavaScript issues
 
 **Key Prompts Used:**
-- "Create a REST API endpoint for user authentication"
-- "Debug this async function that's causing race conditions"
-- "Optimize this database query for better performance"
-
-**Percentage of AI-generated code:** [Approximately X%]
+- "Design a simple women safety web application with SOS and fake call features"
+- "Help debug JavaScript issues related to DOM manipulation"
+- 
+**Percentage of AI-generated code:** [Approximately 80]
 
 **Human Contributions:**
-- Architecture design and planning
-- Custom business logic implementation
-- Integration and testing
-- UI/UX design decisions
+- Overall project idea and problem selection
+- UI/UX design decisions and feature prioritization
+- Manual coding and integration of HTML, CSS, and JavaScript
+- Testing features, fixing bugs, and deployment on Vercel
 
 *Note: Proper documentation of AI usage demonstrates transparency and earns bonus points in evaluation!*
 
@@ -406,7 +406,7 @@ If you used AI tools during development, document them here for transparency:
 
 ## License
 
-This project is licensed under the [LICENSE_NAME] License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 **Common License Options:**
 - MIT License (Permissive, widely used)
