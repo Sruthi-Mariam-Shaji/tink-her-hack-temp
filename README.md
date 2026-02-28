@@ -2,27 +2,29 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# WalkWithHer🌸
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: Sruthi Mariam Shaji's Name
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1:Sruthi Mariam Shaji - TKM College Of Engineering
 
 ### Hosted Project Link
-[mention your project hosted link here]
+https://walk-with-her.vercel.app/
 
 ### Project Description
-[2-3 lines about what your project does]
 
-### The Problem statement
-[What problem are you solving?]
+WalkWithHer is a women-focused safety and support web application designed to help women feel safer and more confident while navigating public spaces. It provides quick-access safety features like SOS alerts, location sharing, and preventive tools along with emotional support through a calm and user-friendly interface.
+
+### The Problem Statement
+
+Women often face safety concerns while traveling alone, especially in unfamiliar or public spaces. Existing safety solutions are either too complex, reactive only during emergencies, or lack emotional reassurance, making them difficult to use when it matters most.
 
 ### The Solution
-[How are you solving it?]
+
+WalkWithHer addresses this problem by offering a simple, web-based safety companion that combines emergency response, preventive safety features, and emotional support. With one-tap SOS, live location sharing, virtual accompany mode, fake call simulation, and quick access to nearby help, the platform empowers women to feel safer, supported, and less alone.
 
 ---
 
@@ -31,25 +33,25 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- **Languages used:** HTML, CSS, JavaScript  
+- **Frameworks used:** None (Vanilla JavaScript)  
+- **Libraries used:** None  
+- **Tools used:** VS Code, GitHub, Vercel, Browser Developer Tools  
 
 **For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
+- **Main components:** Not applicable  
+- **Specifications:** Not applicable  
+- **Tools required:** Not applicable  
 
 ---
 
 ## Features
 
-List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- **One-Tap SOS:** Instantly captures the user’s live location and generates a Google Maps link that can be shared via WhatsApp during emergencies.
+- **Accompany Mode:** Allows users to share their live walk location so a trusted person can virtually accompany them for added safety and reassurance.
+- **Fake Call Simulation:** Simulates an incoming phone call to help users safely exit uncomfortable or potentially unsafe situations.
+- **Quick Help Shortcuts:** Provides one-click access to nearby hospitals, pharmacies, police stations, and public washrooms using Google Maps search.
+- **Motivational Quote Section:** Displays calming and motivational quotes on the home screen that change periodically to provide emotional support.
 
 ---
 
@@ -59,21 +61,17 @@ List the key features of your project:
 
 #### Installation
 ```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
-```
-
-#### Run
-```bash
-[Run commands - e.g., npm start, python app.py]
+No installation required
+This is a frontend-only web application
 ```
 
 ### For Hardware:
 
 #### Components Required
-[List all components needed with specifications]
+Not Applicable
 
 #### Circuit Setup
-[Explain how to set up the circuit]
+Not Applicable
 
 ---
 
@@ -83,10 +81,10 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+!HOME SCREEN<img width="1201" height="808" alt="home" src="https://github.com/user-attachments/assets/ef055984-f80b-4688-842f-306a05a6e989" />
+*Home screen of WalkWithHer showing the SOS button, motivational quote, and navigation options.*
 
-![Screenshot2](Add screenshot 2 here with proper name)
+!E(Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
 
 ![Screenshot3](Add screenshot 3 here with proper name)
