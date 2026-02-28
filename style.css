@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #3f3f46;
+}
+
+/* SECTIONS */
+.section {
+  display: none;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.section.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* PINK BACKGROUND */
+.home-bg {
+  background: linear-gradient(
+    135deg,
+    #fde2e4,
+    #fbcfe8,
+    #fce7f3
+  );
+}
+
+/* HOME TEXT */
+.home-text-only {
+  max-width: 600px;
+}
+
+.home-text-only h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  margin-bottom: 10px;
+}
+
+.headline {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-style: italic;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/* SOS BUTTON */
+.sos-main {
+  background: #dc2626;
+  color: white;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* NAV BUTTONS */
+.nav-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-buttons button {
+  background: #f4c2aa;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* OTHER SECTIONS */
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+}
+
+.back {
+  margin-top: 30px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* QUICK HELP */
+.quick-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.quick-buttons a {
+  text-decoration: none;
+  background: #fde68a;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  color: #111827;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 18px;
+  background: #22c55e;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* SOS LAYOUT FIX */
+.sos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  max-width: 600px;
+}
+
+/* Make text blocks behave properly */
+.sos-container h2,
+.sos-container p,
+.sos-result {
+  text-align: center;
+}
+
+/* FAKE CALL UI */
+.call-ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #000;
+  color: white;
+  text-align: center;
+}
+
+.calling {
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+.caller {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.call-buttons {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.accept {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.reject {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+/* FAKE CALL UI */
+.call-ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #000;
+  color: white;
+  text-align: center;
+}
+
+.calling {
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+.caller {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.call-buttons {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.accept {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.reject {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+/* MOTIVATIONAL QUOTE BOX */
+.quote-box {
+  margin: 25px auto 35px;
+  padding: 18px 22px;
+  max-width: 420px;
+  background: linear-gradient(
+    135deg,
+    #fde2e4,
+    #fbcfe8,
+    #fce7f3
+  );
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glitter shimmer effect */
+.quote-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: shimmer 6s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  50% { left: 100%; }
+  100% { left: 100%; }
+}
+
+.quote-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #9d174d;
+  margin-bottom: 6px;
+}
+
+.quote-text {
+  font-size: 16px;
+  font-style: italic;
+  color: #4a044e;
+}

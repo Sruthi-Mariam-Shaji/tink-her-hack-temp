@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WalkWithHer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HOME -->
+  <section id="home" class="section active home-bg">
+    <div class="home-text-only">
+
+      <h1>WalkWithHer</h1>
+
+      <p class="headline">
+        You don’t have to walk alone.
+      </p>
+
+    <div class="quote-box">
+  <p class="quote-label">Daily Motivation ✨</p>
+  <p id="quote" class="quote-text"></p>
+</div>
+
+      <button class="sos-main" onclick="showSection('sos')">
+        🚨 SOS
+      </button>
+
+      <div class="nav-buttons">
+        <button onclick="showSection('accompany')">Accompany</button>
+        <button onclick="showSection('quickhelp')">Quick Help</button>
+        <button onclick="showSection('fakecall')">Fake Call</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOS -->
+<section id="sos" class="section">
+  <div class="sos-container">
+
+    <h2>🚨 Emergency SOS</h2>
+    <p>Send your live location instantly</p>
+
+    <button class="sos-main" onclick="sendSOS()">SEND SOS</button>
+
+    <div id="sosResult" class="sos-result"></div>
+
+    <a id="whatsappLink" class="whatsapp" target="_blank" style="display:none;">
+      📤 Send via WhatsApp
+    </a>
+
+    <button class="back" onclick="showSection('home')">← Back</button>
+
+  </div>
+</section>
+
+  <!-- ACCOMPANY -->
+<section id="accompany" class="section">
+  <div class="sos-container">
+
+    <h2>🚶‍♀️ Accompany Mode</h2>
+    <p>Let someone walk with you virtually</p>
+
+    <button class="sos-main" onclick="startAccompany()">Start Walk</button>
+
+    <div id="accompanyResult" class="sos-result"></div>
+
+    <a id="accompanyWhatsapp" class="whatsapp" target="_blank" style="display:none;">
+      📤 Share Walk via WhatsApp
+    </a>
+
+    <button class="back" onclick="showSection('home')">← Back</button>
+
+  </div>
+</section>
+
+
+  <!-- QUICK HELP -->
+  <section id="quickhelp" class="section">
+    <h2>📍 Quick Help</h2>
+    <p>Find help near you</p>
+
+    <div class="quick-buttons">
+      <a href="https://www.google.com/maps/search/hospital+near+me" target="_blank">🏥 Hospital</a>
+      <a href="https://www.google.com/maps/search/pharmacy+near+me" target="_blank">💊 Pharmacy</a>
+      <a href="https://www.google.com/maps/search/police+station+near+me" target="_blank">🚓 Police</a>
+      <a href="https://www.google.com/maps/search/public+washroom+near+me" target="_blank">🚻 Washroom</a>
+    </div>
+
+    <button class="back" onclick="showSection('home')">← Back</button>
+  </section>
+
+  <!-- FAKE CALL -->
+<section id="fakecall" class="section">
+  <div class="sos-container">
+
+    <h2>📞 Fake Call</h2>
+    <p>Simulate an incoming call to exit uncomfortable situations</p>
+
+    <button class="sos-main" onclick="startFakeCall()">
+      Start Fake Call
+    </button>
+
+    <button class="back" onclick="showSection('home')">← Back</button>
+
+  </div>
+</section>
+
+<!-- FAKE CALL SCREEN -->
+<section id="callScreen" class="section">
+  <div class="call-ui">
+    <p class="calling">Incoming Call…</p>
+    <h2 class="caller">Mom</h2>
+
+    <div class="call-buttons">
+      <button class="accept" onclick="acceptCall()">Accept</button>
+      <button class="reject" onclick="endCall()">Reject</button>
+    </div>
+  </div>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
